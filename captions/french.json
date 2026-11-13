@@ -1,0 +1,79 @@
+[
+  {
+    "key": "UI_TRANSFER_PARTS_ACTION",
+    "before": {
+      "state": "absent"
+    },
+    "value": "TRANSFÉRER DES PIÈCES"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_ACTION",
+    "before": {
+      "state": "absent"
+    },
+    "value": "TRANSFÉRER DES ROUES"
+  },
+  {
+    "key": "UI_TRANSFER_PARTS_HEADER",
+    "before": {
+      "state": "absent"
+    },
+    "value": "TRANSFÉRER DES PIÈCES"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_HEADER",
+    "before": {
+      "state": "absent"
+    },
+    "value": "TRANSFÉRER DES ROUES"
+  },
+  {
+    "key": "UI_TRANSFER_PROMPT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "TRANSFÉRER {STRING} {STRING}"
+  },
+  {
+    "key": "UI_TRANSFER_FULL",
+    "before": {
+      "state": "absent"
+    },
+    "value": "STOCKAGE PLEIN"
+  },
+  {
+    "key": "UI_TRANSFER_NO_STOCK",
+    "before": {
+      "state": "absent"
+    },
+    "value": "AUCUNE RÉSERVE À LA SOURCE"
+  },
+  {
+    "key": "UI_TRANSFER_NO_TARGETS",
+    "before": {
+      "state": "absent"
+    },
+    "value": "AUCUN STOCKAGE COMPATIBLE À PROXIMITÉ"
+  },
+  {
+    "key": "UI_TRANSFER_ALL_HINT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "Maintenez pour transférer tout ce qui peut tenir"
+  },
+  {
+    "key": "UI_TRANSFER_PARTS_UNIT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "pièces"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_UNIT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "roues"
+  }
+]

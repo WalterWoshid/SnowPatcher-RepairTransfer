@@ -1,0 +1,79 @@
+[
+  {
+    "key": "UI_TRANSFER_PARTS_ACTION",
+    "before": {
+      "state": "absent"
+    },
+    "value": "修理部品を移す"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_ACTION",
+    "before": {
+      "state": "absent"
+    },
+    "value": "スペアタイヤを移す"
+  },
+  {
+    "key": "UI_TRANSFER_PARTS_HEADER",
+    "before": {
+      "state": "absent"
+    },
+    "value": "修理部品を移す"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_HEADER",
+    "before": {
+      "state": "absent"
+    },
+    "value": "スペアタイヤを移す"
+  },
+  {
+    "key": "UI_TRANSFER_PROMPT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "{STRING}{STRING}を移す"
+  },
+  {
+    "key": "UI_TRANSFER_FULL",
+    "before": {
+      "state": "absent"
+    },
+    "value": "収納スペースがいっぱいです"
+  },
+  {
+    "key": "UI_TRANSFER_NO_STOCK",
+    "before": {
+      "state": "absent"
+    },
+    "value": "移動元に補給品がありません"
+  },
+  {
+    "key": "UI_TRANSFER_NO_TARGETS",
+    "before": {
+      "state": "absent"
+    },
+    "value": "近くに対応する収納がありません"
+  },
+  {
+    "key": "UI_TRANSFER_ALL_HINT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "長押しで収納できる分をすべて移す"
+  },
+  {
+    "key": "UI_TRANSFER_PARTS_UNIT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "ポイント"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_UNIT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "本"
+  }
+]

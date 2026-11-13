@@ -1,0 +1,79 @@
+[
+  {
+    "key": "UI_TRANSFER_PARTS_ACTION",
+    "before": {
+      "state": "absent"
+    },
+    "value": "轉移維修零件"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_ACTION",
+    "before": {
+      "state": "absent"
+    },
+    "value": "轉移備胎"
+  },
+  {
+    "key": "UI_TRANSFER_PARTS_HEADER",
+    "before": {
+      "state": "absent"
+    },
+    "value": "轉移維修零件"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_HEADER",
+    "before": {
+      "state": "absent"
+    },
+    "value": "轉移備胎"
+  },
+  {
+    "key": "UI_TRANSFER_PROMPT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "轉移 {STRING}{STRING}"
+  },
+  {
+    "key": "UI_TRANSFER_FULL",
+    "before": {
+      "state": "absent"
+    },
+    "value": "儲存空間已滿"
+  },
+  {
+    "key": "UI_TRANSFER_NO_STOCK",
+    "before": {
+      "state": "absent"
+    },
+    "value": "來源沒有補給品"
+  },
+  {
+    "key": "UI_TRANSFER_NO_TARGETS",
+    "before": {
+      "state": "absent"
+    },
+    "value": "附近沒有相容的儲存裝置"
+  },
+  {
+    "key": "UI_TRANSFER_ALL_HINT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "長按以轉移所有可容納的補給品"
+  },
+  {
+    "key": "UI_TRANSFER_PARTS_UNIT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "點"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_UNIT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "個"
+  }
+]

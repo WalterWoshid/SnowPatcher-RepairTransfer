@@ -1,0 +1,79 @@
+[
+  {
+    "key": "UI_TRANSFER_PARTS_ACTION",
+    "before": {
+      "state": "absent"
+    },
+    "value": "TRASFERISCI RICAMBI"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_ACTION",
+    "before": {
+      "state": "absent"
+    },
+    "value": "TRASFERISCI RUOTE"
+  },
+  {
+    "key": "UI_TRANSFER_PARTS_HEADER",
+    "before": {
+      "state": "absent"
+    },
+    "value": "TRASFERISCI RICAMBI"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_HEADER",
+    "before": {
+      "state": "absent"
+    },
+    "value": "TRASFERISCI RUOTE"
+  },
+  {
+    "key": "UI_TRANSFER_PROMPT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "TRASFERISCI {STRING} {STRING}"
+  },
+  {
+    "key": "UI_TRANSFER_FULL",
+    "before": {
+      "state": "absent"
+    },
+    "value": "SPAZIO ESAURITO"
+  },
+  {
+    "key": "UI_TRANSFER_NO_STOCK",
+    "before": {
+      "state": "absent"
+    },
+    "value": "NESSUNA SCORTA ALLA FONTE"
+  },
+  {
+    "key": "UI_TRANSFER_NO_TARGETS",
+    "before": {
+      "state": "absent"
+    },
+    "value": "NESSUN DEPOSITO COMPATIBILE NELLE VICINANZE"
+  },
+  {
+    "key": "UI_TRANSFER_ALL_HINT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "Tieni premuto per trasferire tutto ciò che entra"
+  },
+  {
+    "key": "UI_TRANSFER_PARTS_UNIT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "ricambi"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_UNIT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "ruote"
+  }
+]

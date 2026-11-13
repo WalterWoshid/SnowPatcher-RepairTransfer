@@ -1,0 +1,79 @@
+[
+  {
+    "key": "UI_TRANSFER_PARTS_ACTION",
+    "before": {
+      "state": "absent"
+    },
+    "value": "REPARATURPUNKTE UMLADEN"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_ACTION",
+    "before": {
+      "state": "absent"
+    },
+    "value": "ERSATZRÄDER UMLADEN"
+  },
+  {
+    "key": "UI_TRANSFER_PARTS_HEADER",
+    "before": {
+      "state": "absent"
+    },
+    "value": "REPARATURPUNKTE UMLADEN"
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_HEADER",
+    "before": {
+      "state": "absent"
+    },
+    "value": "ERSATZRÄDER UMLADEN"
+  },
+  {
+    "key": "UI_TRANSFER_PROMPT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "{STRING} {STRING} UMLADEN"
+  },
+  {
+    "key": "UI_TRANSFER_FULL",
+    "before": {
+      "state": "absent"
+    },
+    "value": "LAGER VOLL"
+  },
+  {
+    "key": "UI_TRANSFER_NO_STOCK",
+    "before": {
+      "state": "absent"
+    },
+    "value": "KEIN VORRAT IN DER QUELLE"
+  },
+  {
+    "key": "UI_TRANSFER_NO_TARGETS",
+    "before": {
+      "state": "absent"
+    },
+    "value": "KEIN PASSENDES LAGER IN DER NÄHE"
+  },
+  {
+    "key": "UI_TRANSFER_ALL_HINT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "Halten, um alles umzuladen, was hineinpasst"
+  },
+  {
+    "key": "UI_TRANSFER_PARTS_UNIT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "Pkt."
+  },
+  {
+    "key": "UI_TRANSFER_WHEELS_UNIT",
+    "before": {
+      "state": "absent"
+    },
+    "value": "Stk."
+  }
+]

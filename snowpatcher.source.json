@@ -1,0 +1,450 @@
+{
+  "authoringVersion": 1,
+  "id": "repair-transfer",
+  "name": "Repair Parts & Spare Wheel Transfer",
+  "version": "1.0.3",
+  "authors": [
+    "WalterWoshid"
+  ],
+  "description": "Transfer repair parts and spare wheels through the truck Functions menu.",
+  "include": [
+    "README.md"
+  ],
+  "testedBuilds": [
+    "26218478"
+  ],
+  "targets": {
+    "refuelController": {
+      "script": "ui.components.popups.repair.refuel_controller",
+      "bundle": "{variant}"
+    },
+    "refuelControllerConfig": {
+      "cache": "[ps]/refuel_controller.sso"
+    },
+    "refuelView": {
+      "script": "ui.components.popups.repair.popup_refuel_ui_view_new",
+      "bundle": "{variant}"
+    },
+    "refuelViewConfig": {
+      "cache": "[ps]/popup_refuel_ui_view_new.sso"
+    },
+    "refuelPopup": {
+      "script": "ui.components.popups.repair.popup_refuel_ui_controller_new",
+      "bundle": "{variant}"
+    },
+    "refuelPopupConfig": {
+      "cache": "[ps]/popup_refuel_ui_controller_new.sso"
+    },
+    "hudConfig": {
+      "cache": "[ps]/hud_interaction_panel_controller.sso"
+    },
+    "hud_interaction_panel_controller": {
+      "script": "ui.hud.hud_controllers.hud_interaction_panel_controller",
+      "bundle": "{variant}"
+    },
+    "transfer_parts_controller": {
+      "script": "ui.components.popups.repair.transfer_parts_controller",
+      "bundle": "{variant}"
+    },
+    "popup_transfer_parts_ui_view": {
+      "script": "ui.components.popups.repair.popup_transfer_parts_ui_view",
+      "bundle": "{variant}"
+    },
+    "popup_transfer_parts_ui_controller": {
+      "script": "ui.components.popups.repair.popup_transfer_parts_ui_controller",
+      "bundle": "{variant}"
+    },
+    "transfer_wheels_controller": {
+      "script": "ui.components.popups.repair.transfer_wheels_controller",
+      "bundle": "{variant}"
+    },
+    "popup_transfer_wheels_ui_view": {
+      "script": "ui.components.popups.repair.popup_transfer_wheels_ui_view",
+      "bundle": "{variant}"
+    },
+    "popup_transfer_wheels_ui_controller": {
+      "script": "ui.components.popups.repair.popup_transfer_wheels_ui_controller",
+      "bundle": "{variant}"
+    },
+    "transfer_wheels_controllerConfig": {
+      "cache": "[ps]/transfer_wheels_controller.sso"
+    },
+    "transfer_parts_controllerConfig": {
+      "cache": "[ps]/transfer_parts_controller.sso"
+    },
+    "popup_transfer_parts_ui_viewConfig": {
+      "cache": "[ps]/popup_transfer_parts_ui_view.sso"
+    },
+    "popup_transfer_wheels_ui_viewConfig": {
+      "cache": "[ps]/popup_transfer_wheels_ui_view.sso"
+    },
+    "popup_transfer_parts_ui_controllerConfig": {
+      "cache": "[ps]/popup_transfer_parts_ui_controller.sso"
+    },
+    "popup_transfer_wheels_ui_controllerConfig": {
+      "cache": "[ps]/popup_transfer_wheels_ui_controller.sso"
+    },
+    "strings_brazilian_portuguese": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_brazilian_portuguese.str"
+        }
+      ]
+    },
+    "strings_chinese_simplified": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_chinese_simplified.str"
+        }
+      ]
+    },
+    "strings_chinese_traditional": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_chinese_traditional.str"
+        }
+      ]
+    },
+    "strings_czech": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_czech.str"
+        }
+      ]
+    },
+    "strings_english": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_english.str"
+        }
+      ]
+    },
+    "strings_french": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_french.str"
+        }
+      ]
+    },
+    "strings_german": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_german.str"
+        }
+      ]
+    },
+    "strings_italian": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_italian.str"
+        }
+      ]
+    },
+    "strings_japanese": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_japanese.str"
+        }
+      ]
+    },
+    "strings_korean": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_korean.str"
+        }
+      ]
+    },
+    "strings_polish": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_polish.str"
+        }
+      ]
+    },
+    "strings_russian": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_russian.str"
+        }
+      ]
+    },
+    "strings_spanish": {
+      "file": "preload/paks/client/initial.pak",
+      "members": [
+        {
+          "format": "zip",
+          "name": "[strings]/strings_spanish.str"
+        }
+      ]
+    }
+  },
+  "checks": [
+    "refuelController",
+    "refuelControllerConfig",
+    "refuelView",
+    "refuelViewConfig",
+    "refuelPopup",
+    "refuelPopupConfig"
+  ],
+  "operations": [
+    {
+      "id": "hud-interaction-panel-controller",
+      "type": "resource.replace",
+      "target": "hud_interaction_panel_controller",
+      "payload": "payloads/{variant}/hud_interaction_panel_controller.sslb"
+    },
+    {
+      "id": "transfer-parts-controller",
+      "type": "resource.add",
+      "target": "transfer_parts_controller",
+      "payload": "payloads/{variant}/transfer_parts_controller.sslb"
+    },
+    {
+      "id": "popup-transfer-parts-ui-view",
+      "type": "resource.add",
+      "target": "popup_transfer_parts_ui_view",
+      "payload": "payloads/{variant}/popup_transfer_parts_ui_view.sslb"
+    },
+    {
+      "id": "popup-transfer-parts-ui-controller",
+      "type": "resource.add",
+      "target": "popup_transfer_parts_ui_controller",
+      "payload": "payloads/{variant}/popup_transfer_parts_ui_controller.sslb"
+    },
+    {
+      "id": "transfer-wheels-controller",
+      "type": "resource.add",
+      "target": "transfer_wheels_controller",
+      "payload": "payloads/{variant}/transfer_wheels_controller.sslb"
+    },
+    {
+      "id": "popup-transfer-wheels-ui-view",
+      "type": "resource.add",
+      "target": "popup_transfer_wheels_ui_view",
+      "payload": "payloads/{variant}/popup_transfer_wheels_ui_view.sslb"
+    },
+    {
+      "id": "popup-transfer-wheels-ui-controller",
+      "type": "resource.add",
+      "target": "popup_transfer_wheels_ui_controller",
+      "payload": "payloads/{variant}/popup_transfer_wheels_ui_controller.sslb"
+    },
+    {
+      "id": "add-transfer-wheels-controller-config",
+      "type": "resource.add",
+      "target": "transfer_wheels_controllerConfig",
+      "payload": "payloads/ui/transfer_wheels_controller.sso"
+    },
+    {
+      "id": "add-transfer-parts-controller-config",
+      "type": "resource.add",
+      "target": "transfer_parts_controllerConfig",
+      "payload": "payloads/ui/transfer_parts_controller.sso"
+    },
+    {
+      "id": "add-popup-transfer-parts-ui-view-config",
+      "type": "resource.add",
+      "target": "popup_transfer_parts_ui_viewConfig",
+      "payload": "payloads/ui/popup_transfer_parts_ui_view.sso"
+    },
+    {
+      "id": "add-popup-transfer-wheels-ui-view-config",
+      "type": "resource.add",
+      "target": "popup_transfer_wheels_ui_viewConfig",
+      "payload": "payloads/ui/popup_transfer_wheels_ui_view.sso"
+    },
+    {
+      "id": "add-popup-transfer-parts-ui-controller-config",
+      "type": "resource.add",
+      "target": "popup_transfer_parts_ui_controllerConfig",
+      "payload": "payloads/ui/popup_transfer_parts_ui_controller.sso"
+    },
+    {
+      "id": "add-popup-transfer-wheels-ui-controller-config",
+      "type": "resource.add",
+      "target": "popup_transfer_wheels_ui_controllerConfig",
+      "payload": "payloads/ui/popup_transfer_wheels_ui_controller.sso"
+    },
+    {
+      "id": "hud-ui",
+      "type": "sso.edit",
+      "target": "hudConfig",
+      "edits": [
+        {
+          "action": "set",
+          "path": [
+            "partsTransferPopup"
+          ],
+          "before": {
+            "state": "absent"
+          },
+          "value": {
+            "json": {
+              "__type": "PopupTransferPartsUiController"
+            }
+          }
+        },
+        {
+          "action": "set",
+          "path": [
+            "wheelsTransferPopup"
+          ],
+          "before": {
+            "state": "absent"
+          },
+          "value": {
+            "json": {
+              "__type": "PopupTransferWheelsUiController"
+            }
+          }
+        },
+        {
+          "action": "append-unique",
+          "path": [
+            "popupIdForHideFunctionButton"
+          ],
+          "before": {
+            "state": "present",
+            "value": {
+              "json": [
+                "REPAIR",
+                "REFUEL_STATION",
+                "REFUEL"
+              ]
+            }
+          },
+          "value": {
+            "json": "TRANSFER_PARTS"
+          }
+        },
+        {
+          "action": "append-unique",
+          "path": [
+            "popupIdForHideFunctionButton"
+          ],
+          "before": {
+            "state": "present",
+            "value": {
+              "json": [
+                "REPAIR",
+                "REFUEL_STATION",
+                "REFUEL"
+              ]
+            }
+          },
+          "value": {
+            "json": "TRANSFER_WHEELS"
+          }
+        }
+      ]
+    },
+    {
+      "id": "strings-brazilian-portuguese",
+      "type": "strings.edit",
+      "target": "strings_brazilian_portuguese",
+      "editsFile": "captions/brazilian_portuguese.json"
+    },
+    {
+      "id": "strings-chinese-simplified",
+      "type": "strings.edit",
+      "target": "strings_chinese_simplified",
+      "editsFile": "captions/chinese_simplified.json"
+    },
+    {
+      "id": "strings-chinese-traditional",
+      "type": "strings.edit",
+      "target": "strings_chinese_traditional",
+      "editsFile": "captions/chinese_traditional.json"
+    },
+    {
+      "id": "strings-czech",
+      "type": "strings.edit",
+      "target": "strings_czech",
+      "editsFile": "captions/czech.json"
+    },
+    {
+      "id": "strings-english",
+      "type": "strings.edit",
+      "target": "strings_english",
+      "editsFile": "captions/english.json"
+    },
+    {
+      "id": "strings-french",
+      "type": "strings.edit",
+      "target": "strings_french",
+      "editsFile": "captions/french.json"
+    },
+    {
+      "id": "strings-german",
+      "type": "strings.edit",
+      "target": "strings_german",
+      "editsFile": "captions/german.json"
+    },
+    {
+      "id": "strings-italian",
+      "type": "strings.edit",
+      "target": "strings_italian",
+      "editsFile": "captions/italian.json"
+    },
+    {
+      "id": "strings-japanese",
+      "type": "strings.edit",
+      "target": "strings_japanese",
+      "editsFile": "captions/japanese.json"
+    },
+    {
+      "id": "strings-korean",
+      "type": "strings.edit",
+      "target": "strings_korean",
+      "editsFile": "captions/korean.json"
+    },
+    {
+      "id": "strings-polish",
+      "type": "strings.edit",
+      "target": "strings_polish",
+      "editsFile": "captions/polish.json"
+    },
+    {
+      "id": "strings-russian",
+      "type": "strings.edit",
+      "target": "strings_russian",
+      "editsFile": "captions/russian.json"
+    },
+    {
+      "id": "strings-spanish",
+      "type": "strings.edit",
+      "target": "strings_spanish",
+      "editsFile": "captions/spanish.json"
+    }
+  ],
+  "variants": [
+    "release",
+    "profile",
+    "debug"
+  ],
+  "modioUrl": "https://mod.io/g/snowrunner/m/repair-parts-spare-wheel-transfer"
+}

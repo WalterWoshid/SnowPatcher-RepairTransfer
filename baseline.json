@@ -1,0 +1,29 @@
+{
+  "modules": {
+    "release": {
+      "ui.hud.hud_controllers.hud_interaction_panel_controller": "ffbfc7b9c77cb6db440404dba72d4fd7711dc2b21606f953902608f1237ac23e",
+      "ui.components.popups.repair.refuel_controller": "7b026b368a6e3c504c1b0641507ad6af5aadbcf7333f360e1f4365167d6734a4",
+      "ui.components.popups.repair.popup_refuel_ui_view_new": "13ca7026ee81d83ebdffff420d2889d64ca94869ea444898719f70b011892acc",
+      "ui.components.popups.repair.popup_refuel_ui_controller_new": "c2ebd6c375f01188c4cae5bcc894427f3e2662035670145c904be4547af08696"
+    },
+    "profile": {
+      "ui.hud.hud_controllers.hud_interaction_panel_controller": "ffbfc7b9c77cb6db440404dba72d4fd7711dc2b21606f953902608f1237ac23e",
+      "ui.components.popups.repair.refuel_controller": "7b026b368a6e3c504c1b0641507ad6af5aadbcf7333f360e1f4365167d6734a4",
+      "ui.components.popups.repair.popup_refuel_ui_view_new": "13ca7026ee81d83ebdffff420d2889d64ca94869ea444898719f70b011892acc",
+      "ui.components.popups.repair.popup_refuel_ui_controller_new": "c2ebd6c375f01188c4cae5bcc894427f3e2662035670145c904be4547af08696"
+    },
+    "debug": {
+      "ui.hud.hud_controllers.hud_interaction_panel_controller": "78093c1348e14270cc132417d6bc82a2b56481d24cb02bac6ad3721aab8fc5cb",
+      "ui.components.popups.repair.refuel_controller": "7b026b368a6e3c504c1b0641507ad6af5aadbcf7333f360e1f4365167d6734a4",
+      "ui.components.popups.repair.popup_refuel_ui_view_new": "b8b5b5336405fd1f88954904e0d4e0c4550f6d372292563079c36a2c7ec07b26",
+      "ui.components.popups.repair.popup_refuel_ui_controller_new": "c2ebd6c375f01188c4cae5bcc894427f3e2662035670145c904be4547af08696"
+    }
+  },
+  "native_metadata_sha256": "e4b5167662bac987090f82c554665aa88fa0917b470012e4f69fab8faa78aea0",
+  "ui_config_sha256": {
+    "[ps]/hud_interaction_panel_controller.sso": "8dda6df6b9c561be9bd4450c369912d09a5f5119335250acf556f1fe41a41032",
+    "[ps]/refuel_controller.sso": "0735dfe60df398c987841c44c885e49d1b7d48a914e40ec2eca0358f47e9cfb4",
+    "[ps]/popup_refuel_ui_view_new.sso": "8599485a2de43910dcd5e6bab99fc08f6073521d83a924259cc445ada3f9452e",
+    "[ps]/popup_refuel_ui_controller_new.sso": "20e6ec0f654931065fab63e78a7705258f06a6b7c2ec0f9b3e8d1623de6e8f72"
+  }
+}
