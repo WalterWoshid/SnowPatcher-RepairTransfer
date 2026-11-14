@@ -2,7 +2,7 @@
   "authoringVersion": 1,
   "id": "repair-transfer",
   "name": "Repair Parts & Spare Wheel Transfer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "authors": [
     "WalterWoshid"
   ],
@@ -213,9 +213,10 @@
   "operations": [
     {
       "id": "hud-interaction-panel-controller",
-      "type": "resource.replace",
+      "type": "sslb.module.extend",
       "target": "hud_interaction_panel_controller",
-      "payload": "payloads/{variant}/hud_interaction_panel_controller.sslb"
+      "payload": "payloads/{variant}/hud_interaction_panel_controller.sslb",
+      "functionsFile": "generated/hud-insertions-{variant}.json"
     },
     {
       "id": "transfer-parts-controller",
@@ -447,5 +448,5 @@
     "debug"
   ],
   "modioUrl": "https://mod.io/g/snowrunner/m/repair-parts-spare-wheel-transfer",
-  "minSnowPatcherVersion": "1.1.0"
+  "minSnowPatcherVersion": "1.4.0"
 }

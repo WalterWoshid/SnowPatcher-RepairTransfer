@@ -393,6 +393,12 @@ def clone_block(code, start, end, prefix, popup, action=None, const=None, method
 
 
 def patch_hud(module):
+    insertions = {}
+
+    def record_insertions(name, before):
+        insertions[name] = [{'at': at, 'length': sum(op is not None for op, _ in rows)}
+                            for at, rows in sorted(before.items())]
+
     parts_type = 'PopupTransferPartsUiController'
     wheels_type = 'PopupTransferWheelsUiController'
     refs = dec(one(module.fields, 4))
@@ -441,6 +447,7 @@ def patch_hud(module):
             assert any(op == 10 and arg == 84 for op, arg in code[start:end])
             before[end] = sum([clone_block(code, start, end, name + str(start) + r, slot)
                                for r, slot in [('p', 169), ('w', 170)]], [])
+        record_insertions(name, before)
         module.patch_code(name, lambda c: insert_code(c, before))
     fields = module.get_function('CreateTruckData')
     constants = [module.constant(fields, [(1, 0, 4), (5, 0, module.string(key))]) for key in
@@ -450,6 +457,7 @@ def patch_hud(module):
     before = {401: sum([clone_block(code, 380, 401, 'row' + r, slot, action, const)
                         for r, slot, action, const in [('p', 169, 35, constants[0]),
                                                      ('w', 170, 36, constants[1])]], [])}
+    record_insertions('CreateTruckData', before)
     module.set_function('CreateTruckData', replace(fields, 5, code_bytes(insert_code(code, before))))
     fields = module.get_function('HandleActionRequest')
     code = instructions(fields)
@@ -459,7 +467,10 @@ def patch_hud(module):
     assert code[start + 1] == (4, 13)
     before = {end: sum([clone_block(code, start, end, 'action' + r, slot, action, method=method)
                         for r, slot, action, method in [('p', 169, 35, 171), ('w', 170, 36, 172)]], [])}
+    record_insertions('HandleActionRequest', before)
     module.set_function('HandleActionRequest', replace(fields, 5, code_bytes(insert_code(code, before))))
+    return [{'class': 'HudInteractionPanelController', 'name': name, 'insertions': rows}
+            for name, rows in insertions.items()]
 
 
 def read_bundle(path):
@@ -484,7 +495,7 @@ def patch_bundle(path, destination):
     header, originals = read_bundle(path)
     byname = dict(originals)
     assert not any('popup_transfer_parts' in n for n in byname), 'already patched'
-    hud = Module(HUD, byname[HUD]); patch_hud(hud)
+    hud = Module(HUD, byname[HUD]); hud_insertions = patch_hud(hud)
     changed = {HUD: hud.bytes()}
     additions = []
     for resource in ('parts', 'wheels'):
@@ -594,5 +605,6 @@ def patch_bundle(path, destination):
                     code = instructions(ff)
                     assert all(0 <= a <= len(code) for op, a in code if op in BRANCHES), n
     print(path.name, len(originals), '->', len(checked), 'modules;', len(out), 'bytes')
+    return hud_insertions
 
 

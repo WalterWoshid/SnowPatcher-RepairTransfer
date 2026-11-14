@@ -2,7 +2,7 @@
 <h1 align="center">Repair Parts &amp; Spare Wheel Transfer</h1>
 
 <p align="center">
-  <img alt="Version 1.0.4" src="https://img.shields.io/badge/Version-1.0.4-458588?labelColor=ebdbb2&amp;style=flat">
+  <img alt="Version 1.0.5" src="https://img.shields.io/badge/Version-1.0.5-458588?labelColor=ebdbb2&amp;style=flat">
   <img alt="SnowPatcher package" src="https://img.shields.io/badge/Package-SnowPatcher-512BD4?labelColor=ebdbb2&amp;style=flat">
   <a href="https://mod.io/g/snowrunner/m/repair-parts-spare-wheel-transfer"><img alt="mod.io" src="https://img.shields.io/badge/mod.io-Mod%20page-8F5BFF?labelColor=ebdbb2&amp;style=flat"></a>
 </p>
@@ -18,7 +18,7 @@ Created by **WalterWoshid**.
 
 ## Installation
 
-Requires SnowPatcher 1.1.0 or newer.
+Requires SnowPatcher 1.4.0 or newer.
 
 Close SnowRunner, add the built ZIP to SnowPatcher, enable the mod and click Apply.
 Players do not need Python or an installer. The source folder itself is not an
@@ -44,9 +44,9 @@ language, and `_bytecode.py` contains the mod logic. Keep both `{STRING}`
 placeholders in `UI_TRANSFER_PROMPT` when editing translations. `baseline.json`
 guards required game code. Building reads the game files and cleans up temporary payloads.
 
-Changed required modules or native definitions need a reviewed rebuild. Other
-mods editing the same HUD module conflict; independent configuration edits,
-including Deliver Unpacked Cargo, can be combined.
+Changed required modules or native definitions need a reviewed rebuild. The HUD extension preserves existing instructions, so compatible
+function edits, including Nearby Repair, can be combined. Whole-module replacements
+and edits at the same insertion point still conflict.
 
 The private maintenance workflow builds reviewed source against verified Steam
 files and publishes compatible releases. Public checks need no game credentials.

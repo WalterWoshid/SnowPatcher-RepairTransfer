@@ -32,7 +32,10 @@ def prepare(work, baseline):
         for name, expected in baseline['modules'][variant].items():
             require_hash(original_modules[name], expected, f'{variant}: {name}')
         prepared_path = work / 'compiled' / original_path.name
-        bytecode.patch_bundle(original_path, prepared_path)
+        insertions = bytecode.patch_bundle(original_path, prepared_path)
+        generated = work / 'generated'
+        generated.mkdir(exist_ok=True)
+        (generated / f'hud-insertions-{variant}.json').write_text(json.dumps(insertions), encoding='utf-8')
         _, prepared = bytecode.read_bundle(prepared_path)
         prepared_modules = dict(prepared)
         expected_additions = {
