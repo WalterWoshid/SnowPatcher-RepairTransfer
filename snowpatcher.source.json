@@ -2,7 +2,7 @@
   "authoringVersion": 1,
   "id": "repair-transfer",
   "name": "Repair Parts & Spare Wheel Transfer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "authors": [
     "WalterWoshid"
   ],
@@ -446,5 +446,6 @@
     "profile",
     "debug"
   ],
-  "modioUrl": "https://mod.io/g/snowrunner/m/repair-parts-spare-wheel-transfer"
+  "modioUrl": "https://mod.io/g/snowrunner/m/repair-parts-spare-wheel-transfer",
+  "minSnowPatcherVersion": "1.1.0"
 }

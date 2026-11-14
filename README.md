@@ -2,7 +2,7 @@
 <h1 align="center">Repair Parts &amp; Spare Wheel Transfer</h1>
 
 <p align="center">
-  <img alt="Version 1.0.3" src="https://img.shields.io/badge/Version-1.0.3-458588?labelColor=ebdbb2&amp;style=flat">
+  <img alt="Version 1.0.4" src="https://img.shields.io/badge/Version-1.0.4-458588?labelColor=ebdbb2&amp;style=flat">
   <img alt="SnowPatcher package" src="https://img.shields.io/badge/Package-SnowPatcher-512BD4?labelColor=ebdbb2&amp;style=flat">
   <a href="https://mod.io/g/snowrunner/m/repair-parts-spare-wheel-transfer"><img alt="mod.io" src="https://img.shields.io/badge/mod.io-Mod%20page-8F5BFF?labelColor=ebdbb2&amp;style=flat"></a>
 </p>
@@ -17,6 +17,8 @@ Created by **WalterWoshid**.
 [SnowPatcher](https://github.com/WalterWoshid/SnowPatcher/releases/latest)
 
 ## Installation
+
+Requires SnowPatcher 1.1.0 or newer.
 
 Close SnowRunner, add the built ZIP to SnowPatcher, enable the mod and click Apply.
 Players do not need Python or an installer. The source folder itself is not an
